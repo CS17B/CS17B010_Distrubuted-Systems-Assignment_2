@@ -38,4 +38,5 @@ here Time can be of the form (Examples like: 02:00,04:00,05:00)
 
 And some entries are stored in data structure for testing purposes and when server is oned remaning enteries will be appended to the data structures
 
-And concurrency is handled by mutexs by keeping in apporiate functions such that when their is a override the code locks will serialize the actions
+And concurrency is handled by mutexs by keeping in apporiate functions such that when their is a override the code of locks will serialize the actions send by 
+multiple users

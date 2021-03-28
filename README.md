@@ -41,4 +41,5 @@ And some entries are stored in data structure for testing purposes and when serv
 And concurrency is handled by mutexs by keeping in apporiate functions such that when their is a override the code of locks will serialize the actions send by 
 multiple users
 
-It is non-presistent storage so once server is down ever data enteries stored is gone and only statical some 5-6 are maintained in the dara structue for testing purpose
+It is non-presistent storage so once server is down every data enteries stored is gone and only statical stored 5-6 are maintained in the data structue for
+testing purpose

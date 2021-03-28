@@ -1,12 +1,12 @@
-{{ define "edit" }}
-<h1>Editing </h1>
+{{ define "new" }}
+<h1>Editing {{.Name}}s old requests</h1>
 <form action="/Empreqs/Empreq" method="POST">
     <div><label for="n"><b>NAME</b> </label></div>
-    <div><input name="n" type="name" /></div><br>
+    <div><input name="n" type="name" value="{{.Name}}" /></div><br>
     <div><label for="t"><b>TIME</b> </label></div>
-    <div><input name="t" type="time" /></div><br>
+    <div><input name="t" type="time"  value="{{.Time}}"/></div><br>
     <div><label for="d"><b>DATE</b> </label></div>
-    <div><input name="d" type="text"  /></div><br>
+    <div><input name="d" type="text" value="{{.Date}}"  /></div><br>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
     $(function () {
@@ -27,13 +27,14 @@
 </select></div><br>
 
 <div><b>MEMBERS OF GROUP MEETING:</b></div>
-<div><input type="text" name="m" id="txtOther" disabled="disabled" /></div><br>
+<div><input type="text" name="m" value="{{.Members}}" id="txtOther" disabled="disabled" /></div><br>
     <div><label for="d"><b>TASK DESCRIPTION</b> </label></div>
-<div> <textarea name="body" rows="10" cols="40"></textarea><br></div>
+<div> <textarea name="body" rows="10" cols="40">{{.Body}}</textarea><br></div>
     <div><input type="submit" value="Save"></div>
 </form>
 {{ end }}
 
 
      
-    
+
+     
